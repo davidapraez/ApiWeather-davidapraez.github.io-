@@ -1,9 +1,10 @@
+/* Formato de fuente de la pagina en general*/
 *{
     font-family: 'Courier New', Courier, monospace;
 }
-
+/* Custom properties*/
 :root{
-    --blanco: #ffffff; /*SE LLAMAN CUSTOM PROPERTIES*/
+    --blanco: #ffffff;
     --primario: #ffc107;
     --oscuro: #000000;
     --secundario: #0097a7;
@@ -24,8 +25,9 @@ body{
     background-color:var(--primario) ;
     padding: 50px;
     display: flex;
-    
     justify-content: center;
+    margin-top: 20px;
+    width: 100rem 100rem;
 
 }
 
@@ -47,13 +49,15 @@ body{
 .information-container{
     display: flex;
 }
+/* Informacion*/
 .info{
     margin-left: 5px;
 }
+/* Location*/
 #location{
     font-size: 22px;
 }
-
+/* Boton de enviar*/
 .boton{
     background-color: var(--secundario);
     color: var(--blanco);
@@ -61,7 +65,6 @@ body{
     margin-top: 0px;
     font-size: 2rem;
     text-decoration: none;
-    text-transform: uppercase;
     font-weight: bold;
     border-radius: .5rem;
     width: 10%;
@@ -76,6 +79,7 @@ body{
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem ;
+    justify-content: center;
   }
   .formulario fieldset{
     border: none;
