@@ -1,0 +1,120 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+:root{
+    --blanco: #ffffff; /*SE LLAMAN CUSTOM PROPERTIES*/
+    --primario: #ffc107;
+    --oscuro: #000000;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+}
+#titulo{
+    justify-content: center;
+}
+
+body{
+    background-color: var(--grisClaro);
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+}
+#contenedor{
+    background-color:var(--primario) ;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#contenedor > .block{
+    padding: 20px;
+
+}
+
+#contenedor-campos{
+  justify-content: center;
+}
+
+
+.block{
+    font-weight: bolder;
+}
+.block:first-child{
+    background-color:var(--secundario);
+    color: var(--oscuro);
+}
+.information-container{
+    display: flex;
+}
+.info{
+    margin-left: 5px;
+}
+#location{
+    font-size: 22px;
+}
+
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 0px;
+    margin-top: 0px;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 10%;
+    text-align: center;
+    border: none;
+  }
+
+/* formulario */
+.formulario{
+    background-color: var(--gris);
+    width: min(60rem, 100%);/* utilizar el valor mas pequeño*/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem ;
+  }
+  .formulario fieldset{
+    border: none;
+  }
+  
+  .formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primario)
+  }
+
+
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
